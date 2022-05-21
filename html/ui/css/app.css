@@ -1,0 +1,131 @@
+@font-face {
+	font-family: roboto;
+	src: url('../roboto.ttf');
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	font-family: roboto;
+}
+
+#cursor {
+	position: absolute;
+	z-index: 999999;
+	display: none;
+}
+
+#container {
+	position: absolute;
+	background: linear-gradient(#007B84, #3458ae);
+	height: 500px;
+	width: 600px;
+	top: 50%;
+	left: 50%;
+	margin: -250px 0 0 -300px;
+	cursor: default;
+	border-radius: 40px;
+}
+
+#header {
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 75px;
+	background: linear-gradient(#f5f5f5, #adadad);
+	border-top-left-radius: 40px;
+	border-top-right-radius: 40px;
+
+
+}
+
+#logo {
+	height: 60px;
+	margin: 10px;
+	margin-left: 8px;
+	margin-top: 8px;
+	border-top-left-radius: 28px;
+
+}
+
+#welcome-text {
+	font-size: 25px;
+	position: absolute;
+	top: 100px;
+	left: 50%;
+	width: 450px;
+	margin: 0 0 0 -225px;
+	color: white;
+}
+
+#menu {
+	position: relative;
+	top: 90%;
+}
+
+#menu {
+	display: flex;
+	flex-direction: column;
+	height: 150px;
+	margin: -150px auto 0;
+	width: 500px;
+}
+
+#menu div {
+	display: flex;
+	flex-direction: row;
+	padding-left: 30px;
+	
+}
+
+input {
+	margin: 0 20px 0 0;
+	background: linear-gradient(#3459ae00, #3459ae00);
+	border-radius: 5px;
+	border: 2px solid #ffffff;
+	color: white;
+}
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+	/* display: none; <- Crashes Chrome on hover */
+	-webkit-appearance: none;
+	margin: 0;
+	/* <-- Apparently some margin are still there even though it's hidden */
+}
+
+button {
+	background: #3459ae00;
+	border-radius: 100px;
+	border: 2px solid #ffffff;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+#deposit_btn {
+	width: 170px;
+	height: 50px;
+	font-size: 2em;
+	color:white
+}
+
+#deposit_amount {
+	width: 250px;
+	height: 50px;
+	font-size: 2em;
+}
+
+#withdraw_btn {
+	width: 170px;
+	height: 50px;
+	font-size: 2em;
+	color:white
+}
+
+#withdraw_amount {
+	width: 250px;
+	height: 50px;
+	font-size: 2em;
+}
